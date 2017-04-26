@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Abp.Quartz</id>
+    <version>1.4.1.8</version>
+    <title>Abp.Quartz</title>
+    <authors>Vlad Tudoran</authors>
+    <owners>Vlad Tudoran</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Quartz Abp integration package</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Abp Quartz</tags>
+  </metadata>
+  <files>
+    <file src="bin\Release\net452\Abp.Quartz.dll" target="lib\net452"/>
+  </files>
+</package>
