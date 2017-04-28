@@ -87,7 +87,7 @@ namespace Abp.Quartz.Quartz
             {
                 try
                 {
-                    _quartzConfiguration.Scheduler.Shutdown(true);
+                    _quartzConfiguration.Scheduler.Standby();
                 }
                 catch (Exception ex)
                 {

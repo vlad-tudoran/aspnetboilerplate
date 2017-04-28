@@ -2,6 +2,7 @@
 
 using Abp.Modules;
 using Abp.Quartz.Quartz;
+using Abp.Quartz.Quartz.Configuration;
 
 namespace Abp.Quartz.Tests
 {
@@ -11,6 +12,7 @@ namespace Abp.Quartz.Tests
         public override void PreInitialize()
         {
             Configuration.BackgroundJobs.IsJobExecutionEnabled = true;
+            Configuration.BackgroundJobs.UseQuartz();
         }
 
         public override void Initialize()
