@@ -106,9 +106,8 @@ namespace Abp.Notifications
             {
                 //We enqueue a background job since distributing may get a long time
                 await _backgroundJobManager.EnqueueAsync<NotificationDistributionJob, NotificationDistributionJobArgs>(
-                    new NotificationDistributionJobArgs(
-                        notificationInfo.Id
-                        )
+                    new NotificationDistributionJobArgs(notificationInfo.Id),
+                    BackgroundJobPriority.AboveNormal
                     );
             }
         }
